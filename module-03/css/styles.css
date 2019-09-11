@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  text-align: center;
+	padding: 20px 0 50px 0;
+	text-align: center;
+	font-size: 0px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #626262;
+  font-size: 14px;
+  display: block;
+}
+.menu a:hover {
+  color: black;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.menu li {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  padding: 0 60px;
+}
+.container{
+  width: 970px;
+  margin: 0 auto;
+}
+
+.content-list{
+  list-style: none;
+  font-size: 0;
+}
+
+.content-item{
+  display: inline-block;
+  width: 420px;
+}
+
+.content-item:not(:nth-child(2n)){
+  margin-right: 60px;
+}
+.content-item:nth-child(-n + 4){
+  margin-bottom: 80px;
+}
+
+.section-image{
+  margin-bottom: 25px;
+}
+
+.article-title{
+  margin: 0 ;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #626262;
+  font-weight: inherit;
+}
+
+.article-content{
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  line-height: 16.8pt;
+}
+
+.section-article {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b4ad9e;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: #626262;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  margin: 50px auto;
+  border: 1px solid #626262;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
