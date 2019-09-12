@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
 *,
 *::before,
 *::after {
@@ -29,7 +34,7 @@ img {
 
 .menu {
   text-align: center;
-	padding: 20px 0 50px 0;
+	padding: 30px 0 40px 0;
 	text-align: center;
 	font-size: 0px;
 }
@@ -41,7 +46,7 @@ img {
   display: block;
 }
 .menu a:hover {
-  color: black;
+  color: #03a9f4;
 }
 
 .menu ul {
@@ -52,18 +57,22 @@ img {
 
 .menu li {
   display: inline-block;
-  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   padding: 0 60px;
 }
+
+.content {
+  padding-bottom: 40px;
+}
 .container{
-  width: 970px;
+  width: 900px;
   margin: 0 auto;
 }
 
 .content-list{
   list-style: none;
   font-size: 0;
+  padding: 0;
 }
 
 .content-item{
@@ -77,15 +86,17 @@ img {
 .content-item:nth-child(-n + 4){
   margin-bottom: 80px;
 }
+.content-item:nth-child(n + 4){
+  margin-bottom: 60px;
+}
 
 .section-image{
   margin-bottom: 25px;
 }
 
 .article-title{
-  margin: 0 ;
+  margin: 0;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
   font-size: 30px;
   color: #626262;
   font-weight: inherit;
@@ -94,7 +105,6 @@ img {
 .article-content{
   margin: 0;
   font-size: 14px;
-  font-family: 'Playfair Display', serif;
   color: #626262;
   line-height: 16.8pt;
 }
@@ -104,6 +114,8 @@ img {
     text-transform: uppercase;
     font-size: 14px;
     color: #b4ad9e;
+    margin: 0;
+    margin-bottom:  14px;
 }
 
 button {
@@ -117,8 +129,8 @@ button {
   font-size: 20px;
   font-family: 'Playfair Display', serif;
   cursor: pointer;
-  margin: 50px auto;
   border: 1px solid #626262;
+  margin: 0 auto;
 }
 
 button:hover {
