@@ -19,6 +19,12 @@ img {
   margin: 0px auto;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   margin: 0;  
   font-family: "Open Sans", sans-serif;
@@ -146,7 +152,7 @@ body {
   padding-top: 5px;
 }
 
-.item span {
+.item p {
   font-size: 18px;
   margin: 0;
   background-color: #323232;
