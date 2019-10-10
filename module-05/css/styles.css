@@ -205,7 +205,6 @@ img {
 .item {
   width: 255px;
   float: left;
-  cursor: pointer;
   margin-bottom: 100px;
   position: relative;
 }
@@ -243,6 +242,17 @@ img {
   float: left;
   width: 201px;
   padding-left: 14px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0;
+  background-color: #323232;
+  color: #ffffff;
+  height: 40px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  line-height: 35px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
 }
 
 .item-price {
@@ -263,6 +273,7 @@ img {
   right: 10px;
   position: absolute;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .item:hover .overlay {
@@ -363,15 +374,6 @@ img {
   transition: all 0.2s;
 }
 
-.cart-button p {
-  background-color: transparent;
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 /* FOOTER */
 
 .footer {
@@ -387,4 +389,10 @@ img {
 .foooter-text-green {
   color: #1abc9c;
   cursor: pointer;
+  text-align: center;
+  padding: 38px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: none;
 }

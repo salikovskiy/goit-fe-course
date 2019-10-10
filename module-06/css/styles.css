@@ -10,7 +10,6 @@ html {
 }
 
 a {
-    display: block;
     text-decoration: none;
 }
 
@@ -25,18 +24,21 @@ ul, ol {
 }
 
 .container {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .header {
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding: 30px 0;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
+}
+
+.section-services {
+    margin-top: 90px;
 }
 
 .navigation-list {
@@ -83,6 +85,7 @@ ul, ol {
     text-align: center;
     font-size: 24px;
     color: #333333;
+    line-height: 40px;
 }
 
 .section-title::after {
@@ -170,9 +173,169 @@ ul, ol {
     color: #999999;
 }
 
-.section-team-wrapper {
+.team-list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.section-team-description {
+    margin: 0 auto;
+    width: 950px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    margin-bottom: 90px;
+}
+
+.team-list-name, .team-list-position {
+    text-align: center;
+}
+
+.team-list-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.team-list-position {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+    margin-bottom: 80px;
+}
+
+.team-list-img-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.overlay  {
+    display: flex;
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    top: -10px;
+    left: -10px;
+    transition: all .2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay:hover {
+    background-image: linear-gradient( rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%);
+    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+}
+
+.overlay-list {
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay-list-link {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.overlay-list-item {
+    width: 60px;
+    height: 60px;
+    background-color: #fce38a;
+}
+
+.overlay-list-item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.overlay-list-item:hover {
+    background-color: #95e1d3;
+}
+
+.overlay:hover .overlay-list {
+    visibility: visible;
+}
+
+.facebook {
+    background-image: url(../img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram {
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pinterest {
+    background-image: url(../img/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-top: 1px solid #e5e5e5;
+}
+
+input[type=YourEmail] {
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    height: 40px;
+    width: 225px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 10px;
+  }
+
+  .footer-input-btn {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .footer-form {
+      display: flex;
+  }
+
+  .footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .footer-template-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f38181;
+  }
 
 
