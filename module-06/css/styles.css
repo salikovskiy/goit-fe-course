@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 
 html {
@@ -41,9 +41,9 @@ ul, ol {
 
 .navigation-list {
     display: flex;
-    align-items: flex-end;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 14px;
     text-transform: uppercase;
     justify-content: space-between
 }
@@ -54,8 +54,125 @@ ul, ol {
 
 .navigation-list-link {
     color: #95e1d3;
+    transition: color .2s;
 }
 
 .navigation-list-link:hover {
     color: #f38181;
 }
+
+.navigation-list-link::after {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f38181;
+    content: "";
+    /* visibility: hidden; */
+    transition: opacity .2s;
+    opacity: 0;
+}
+
+.navigation-list-item:hover .navigation-list-link::after  {
+    /* visibility: visible;  */
+    opacity: 1;
+}
+
+.section-title {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+}
+
+.section-title::after {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #f38181;
+    content: "";
+    margin: 40px auto 50px;
+}
+
+.section-title-other {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #333333;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-list-item {
+    position: relative;
+    width: 380px;
+    margin-bottom: 90px;
+    background-repeat: no-repeat;
+    background-position: top left 20px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.services-list-item:nth-child(3n) {
+    padding-right: 0;
+}
+
+.services-list-item::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 28px;
+    top: 0;
+}
+
+.icon-1::before {
+    background-image: url(../img/ALARM.png);
+}
+
+.icon-2::before {
+    background-image: url(../img/LINE-GRAPH.png);
+}
+
+.icon-3::before {
+    background-image: url(../img/COMPUTER.png);
+}
+
+.icon-4::before {
+    background-image: url(../img/BOOK.png);
+}
+
+.icon-5::before {
+    background-image: url(../img/HOME.png);
+}
+
+.icon-6::before {
+    background-image: url(../img/IMAGE.png);
+}
+
+.services-list-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.services-list-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.section-team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
