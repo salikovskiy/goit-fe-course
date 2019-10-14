@@ -34,6 +34,10 @@ img {
   font-size: 0;
 }
 
+.logo, .product-name {
+  display: inline-block;
+}
+
 .logotype {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -123,6 +127,10 @@ img {
 
 .content {
   padding: 0 60px;
+}
+
+.section-slider-title-wrapper {
+  letter-spacing: -1.2px;
 }
 
 .slider-button {
@@ -238,9 +246,13 @@ img {
   background-color: rgb(26, 188, 156);
 }
 
+.product-wrapper {
+  position: relative;
+}
+
 .item-title {
   float: left;
-  width: 201px;
+  width: 255px;
   padding-left: 14px;
   cursor: pointer;
   font-size: 18px;
@@ -255,11 +267,13 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
-.item-price {
-  opacity: 0.44;
-  float: right;
+.item .item-price {
+  background-color: rgba(255, 255, 255, .5);
   width: 54px;
   text-align: center;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
 }
 
 .product-hover {
@@ -288,8 +302,12 @@ img {
 .elements {
   display: block;
   width: 165px;
-  margin: 0 auto;
-  padding-top: 90px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%)
 }
 
 .element {
@@ -303,6 +321,21 @@ img {
 }
 
 .element-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: all 0.2s;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.element-button-cart {
+  width: 162px;
   height: 50px;
   border: none;
   transition: all 0.2s;
@@ -313,7 +346,9 @@ img {
   text-transform: uppercase;
   color: #fff;
   padding-right: 12px;
+  text-align: right;
   cursor: pointer;
+  
 }
 
 .element:nth-child(2) {
@@ -340,11 +375,6 @@ img {
   opacity: 1;
 }
 
-.element:not(:last-child) {
-  width: 50px;
-  height: 50px;
-}
-
 .cart-text {
   font-size: 14px;
   color: #fff;
@@ -363,7 +393,6 @@ img {
 .cart-button {
   display: inline-block;
   border: 1px solid #fff;
-  width: 158px;
   height: 50px;
   margin: 0;
   background-image: url(../img/element-4.png);
@@ -372,6 +401,7 @@ img {
   text-align: right;
   opacity: 0;
   transition: all 0.2s;
+  margin-top: 4px;
 }
 
 /* FOOTER */
