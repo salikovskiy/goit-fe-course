@@ -37,37 +37,40 @@
 
     <main class="main">
         <section class="section-services">
-            <div class="continer">
-                <h2 class="section-title">Services</h2>
-                <p class="section-description">Proin iaculis purus consequat sem cure.</p>
+            <div class="container">
+
+                <div class="text-wrapper">  
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-description">Proin iaculis purus consequat sem cure.</p>
+                </div>
+                
+                <ul class="services-list">
+                    <li class="services-list-item pic-1">
+                        <h3 class="section-list-title">E-Commerce</h3>
+                        <p class="services-list-description">
+                                Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.
+                        </p>
+                    </li>
+                    <li class="services-list-item pic-2">
+                        <h3 class="section-list-title">Responsive Web</h3>
+                        <p class="services-list-description">
+                                Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.
+                        </p>
+                    </li>
+                    <li class="services-list-item pic-3">
+                        <h3 class="section-list-title">Web Security</h3>
+                        <p class="services-list-description">
+                                Proin iaculis purus consequat sem cure 
+                                digni ssim. Donec porttitora entum suscipit 
+                                aenean rhoncus posuere odio in tincidunt.
+                        </p>
+                    </li>
+                </ul>
             </div>
-            
-            <ul class="services-list">
-                <li class="services-list-item">
-                    <h3 class="section-list-title">E-Commerce</h3>
-                    <p class="services-list-description">
-                            Proin iaculis purus consequat sem cure 
-                            digni ssim. Donec porttitora entum suscipit 
-                            aenean rhoncus posuere odio in tincidunt.
-                    </p>
-                </li>
-                <li class="services-list-item">
-                    <h3 class="section-list-title">Responsive Web</h3>
-                    <p class="services-list-description">
-                            Proin iaculis purus consequat sem cure 
-                            digni ssim. Donec porttitora entum suscipit 
-                            aenean rhoncus posuere odio in tincidunt.
-                    </p>
-                </li>
-                <li class="services-list-item">
-                    <h3 class="section-list-title">Web Security</h3>
-                    <p class="services-list-description">
-                            Proin iaculis purus consequat sem cure 
-                            digni ssim. Donec porttitora entum suscipit 
-                            aenean rhoncus posuere odio in tincidunt.
-                    </p>
-                </li>
-            </ul>
         </section>
 
         <section class="section-contact">
@@ -75,7 +78,19 @@
                 <h2 class="section-title">contact us</h2>
                 <p class="section-description">Proin iaculis purus consequat sem cure.</p>
 
-                
+                <form action="#">
+                    <section class="col-1">
+                        <input type="text" placeholder="your name *" class="your-name" required>
+                        <input type="email" placeholder="your email *"  class="your-email" required>
+                        <input type="text" placeholder="subject" class="subject">
+                    </section>
+                    <section class="col-2">
+                        <textarea name="your message" placeholder="your message *" id="textarea"></textarea>
+                    </section>
+                    <section class="col-3">
+                        <button class="form-btn">send message</button>
+                    </section>
+                </form>
             </div>
         </section>
     </main>
