@@ -74,9 +74,6 @@ ul, ol {
     opacity: 0;
 }
 
-.navigation-list-item {
-}
-
 .navigation-list-item:hover .navigation-list-link::after  {
     opacity: 1;
 }
