@@ -78,14 +78,17 @@
                 <h2 class="section-title">contact us</h2>
                 <p class="section-description">Proin iaculis purus consequat sem cure.</p>
 
-                <form action="#">
-                    <section class="col-1">
-                        <input type="text" placeholder="your name *" class="your-name" required>
-                        <input type="email" placeholder="your email *"  class="your-email" required>
-                        <input type="text" placeholder="subject" class="subject">
-                    </section>
-                    <section class="col-2">
-                        <textarea name="your message" placeholder="your message *" id="textarea"></textarea>
+                <form action="#" class="section-contact-form">
+                    <section class="section-input">
+                            <div class="col-1">
+                                <input type="text" placeholder="your name *" class="your-name" name="your-name" required>
+                                <input type="email" placeholder="your email *"  class="your-email" name="your-email" required>
+                                <input type="text" placeholder="subject" class="subject">
+                            </div>
+
+                            <div class="col-2">
+                                <textarea name="your message" placeholder="your message *" id="textarea" required></textarea>
+                            </div>
                     </section>
                     <section class="col-3">
                         <button class="form-btn">send message</button>
