@@ -301,7 +301,7 @@ a {
     }
 
     .partner-list {
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
     }
