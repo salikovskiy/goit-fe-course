@@ -360,30 +360,6 @@ ul, ol {
     height: 22px;
 }
 
-.facebook {
-    background-image: url(../img/facebook.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.instagram {
-    background-image: url(../img/instagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.pinterest {
-    background-image: url(../img/pinterest.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.twitter {
-    background-image: url(../img/twitter.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .footer .container {
     display: flex;
     justify-content: space-between;
