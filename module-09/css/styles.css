@@ -1,0 +1,286 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+* {
+padding: 0;
+margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-description {
+  text-align: center;
+}
+
+.section-partners-title {
+  text-align: center;
+}
+
+.partner-info {
+  text-align: center;
+}
+
+.header {
+  background-image: url(../img/VectorSmartObject-m.jpg);
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 140px;
+  padding-top: 30px;
+}
+
+.header-btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.9375rem;
+  background-color: transparent;
+  transition: all .2s linear;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 1.25rem;
+}
+
+.header-btn:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.btn-wrapper {
+  margin-bottom: 130px;
+}
+
+.logotype {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  width: 176.05px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(0, 0, 0, .87);
+  animation: animIntro 3.5s steps(23 ,end),
+             animBar 1s step-end infinite;
+  margin-bottom: 30px;
+}
+
+@keyframes animIntro {
+  0% { width:0;}
+  100% { width: 176.05px;}
+}
+
+@keyframes animBar {
+  0%, 100%{ border-color: rgba(0,0,0,0);}
+  50%{ border-color: rgba(0,0,0,.87);}
+}
+
+.header-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+  margin-bottom: 1.25rem;
+}
+
+.header-description {
+  margin: 0 auto;
+  width: 80%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.875rem;
+}
+
+.header-heading-btn {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: #ff4e50;
+  border: none;
+  padding: 0.9375rem 2rem;
+  border-radius: 1.875rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  transition: all .2s;
+}
+
+.section-partners {
+  padding-top: 4.375rem;
+  padding-bottom: 2.5rem;
+}
+
+
+.section-partners-title {
+  text-align: center;
+  color: #333333;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+
+.partner-list {
+  padding-bottom: 2.5rem;
+}
+
+.partner-list-item {
+  margin-top: 1.25rem;
+}
+
+.partner-picture {
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.partner-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #333333;
+  padding: 0.9375rem 0;
+}
+
+.partner-info {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #333333;
+}
+
+.img-wrapper::before {
+  display: block;
+  content: "";
+  width: 2.375rem;
+  height: 2.375rem;
+  position: absolute;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #fff;
+}
+
+.pic-1::before {
+  background-image: url(../img/Shape128.png);
+  background-color: #ff4e50;
+}
+
+.pic-2::before {
+  background-image: url(../img/Shape153.png);
+  background-color: #1cd7ad;
+}
+
+.pic-3::before {
+  background-image: url(../img/Shape155.png);
+  background-color: #ffa507;
+}
+
+.pic-4::before {
+  background-image: url(../img/Shape170.png);
+  background-color: #4e73db;
+}
+
+.section-partners .header-heading-btn {
+  border: 3px solid #ff4e50;
+  background-color: transparent;
+  color: #ff4e50;
+}
+
+@media (min-width: 768px) {
+  .header {
+      background-image: url(../img/VectorSmartObject-t.jpg);
+      padding-bottom: 14.6875rem;
+  }
+
+  .btn-wrapper {
+    margin-bottom: 0;
+  }
+
+  .logotype {
+    margin-bottom: 0;
+  }
+
+  .header-nav {
+    margin-bottom: 150px;
+  }
+
+  .header-title {
+    font-size: 52px;
+  }
+
+  .header-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 970px) {
+  .header {
+      background-image: url(../img/VectorSmartObject-d.jpg);
+  }
+}
