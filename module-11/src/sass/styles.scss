@@ -1,0 +1,17 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+
+//helpers
+
+@import './helpers/base';
+@import './helpers/fonts';
+@import './helpers/variables';
+
+//sections
+
+@import './sections/header';
+@import './sections/services';
+@import './sections/team';
+@import './sections/footer';

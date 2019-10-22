@@ -1,0 +1,68 @@
+.footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-top: 1px solid $color-fourth;
+  }
+
+  &__input-btn {
+    width: 150px;
+    height: 40px;
+    background-color: $color-tertiary;
+    border: none;
+    color: $color-white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: c, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-text-main;
+  }
+
+  &__template-link {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-main;
+  }
+
+  &__input {
+    padding-left: 10px;
+    border: 0.5px solid $color-text-secondary;
+    border-right: none;
+    width: 230px;
+
+    &::placeholder {
+      font-family: $font-tertiary;
+      font-size: 15px;
+      font-weight: 300;
+      font-style: italic;
+      color: $color-text-secondary;
+    }
+  }
+}
+
+  input[type=YourEmail] {
+    border: 1px solid $color-fourth;
+    border-right: none;
+    height: 40px;
+    width: 225px;
+    font-family: $font-tertiary;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 10px;
+  }

@@ -1,0 +1,118 @@
+.header {
+    background-image: linear-gradient( 0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/bg-img.jpg);
+    background-size: cover;
+    padding: 30px 0;
+
+    &__description {
+        font-size: 72px;
+        font-family: $font-secondary;
+        text-align: center;
+        color: $color-white;
+        letter-spacing: -0.03em ;
+        margin-bottom: 65px;
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 150px;
+        text-align: center;
+        color: $color-white;
+        margin: 0 auto;
+        width: 80%;
+        line-height: 140px;
+        margin-bottom: 125px;
+    }
+
+    &__content {
+        padding-top: 170px;
+        padding-bottom: 230px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        padding-top: 10px;
+        display: block;
+        font-family: $font-primary;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        color: $color-white;
+        border: 3px solid;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__list-svg {
+        width: 18px;
+        height: 15px; 
+        fill: $color-white; 
+    }
+
+    &__list {
+        display: flex;
+        font-family: $font-primary;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        justify-content: space-between;
+        width: 490px;
+    }
+
+    &__list-link {
+        color: $color-white;
+        transition: all .2s linear;
+
+        &::after {
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $color-secondary;
+            content: "";
+            transition: all .3s linear;
+            opacity: 0;
+        }
+    }
+
+    &__list-item {
+        &:hover {
+            .navigation__list {
+                &-svg {
+                    fill: $color-secondary;
+                }
+
+                &-link {
+                    color: $color-secondary;
+
+                    &::after  {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logotype {
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+@media (min-resolution: 192dpi) {
+    .header {
+      background-image: linear-gradient( 0deg, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(../images/bg-img@2x.jpg);
+    }
+}
+
