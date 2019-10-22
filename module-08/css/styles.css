@@ -109,8 +109,24 @@ a {
 }
 
 .logotype {
+    width: 176.05px;
     font-size: 1.25rem;
     text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid rgba(0, 0, 0, .87);
+    animation: animIntro 3.5s steps(23 ,end),
+               animBar 1s step-end infinite;
+}
+
+@keyframes animIntro {
+    0% { width:0;}
+    100% { width: 176.05px;}
+}
+
+@keyframes animBar {
+    0%, 100%{ border-color: rgba(0,0,0,0);}
+    50%{ border-color: rgba(0,0,0,.87);}
 }
 
 .header-registration__btn:hover {
